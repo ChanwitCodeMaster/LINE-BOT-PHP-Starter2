@@ -20,11 +20,8 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-					"type": "location",
-				    "title": "my location",
-				    "address": "Bangkok, Thailand",
-				    "latitude": '35.65910807942215',
-				    "longitude": '139.70372892916203',
+				'type' => 'text',
+				'text' => 'สวัสดี'
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
@@ -46,7 +43,7 @@ if (!is_null($events['events'])) {
 			curl_close($ch);
 
 			echo $result . "\r\n";
-		//}
+		
 	}
 }
 echo "OK";
